@@ -145,10 +145,15 @@ div {
 
 .we-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .we-title {
+    font-size: 36px;
+  }
 }
 
 .team-title {
@@ -164,6 +169,11 @@ div {
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__lable {
+    text-align: left;
+  }
 }
 
 .work-title {
@@ -238,8 +248,15 @@ div {
 }
 
 .form__btn {
-  display: block;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -254,6 +271,7 @@ div {
             align-items: center;
     justify-items: center;
     margin-left: 12px;
+    margin-top: 0;
   }
 }
 
@@ -973,6 +991,8 @@ div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -980,6 +1000,12 @@ div {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .clients__link {
@@ -1037,9 +1063,9 @@ div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1050,20 +1076,30 @@ div {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
 .footer__address {
   display: block;
 }
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__address {
     margin-right: 165px;
+    margin-left: 76px;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__address {
     margin-right: 70px;
+    margin-left: 15px;
   }
 }
 
@@ -1112,13 +1148,19 @@ div {
 .joining {
   display: block;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
   margin-top: 60px;
 }
-@media screen and (min-width: 768px), (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .joining {
     margin-top: 0;
+    margin-right: 89px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .joining {
+    margin-top: 0;
+    margin-right: 0;
   }
 }
 
@@ -1190,16 +1232,21 @@ div {
   height: 153px;
   margin-top: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .subscription {
     margin-left: 93px;
-    width: 570px;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -1207,7 +1254,7 @@ div {
   display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .subscription__form {
@@ -1215,11 +1262,20 @@ div {
     display: -ms-flexbox;
     display: flex;
     gap: 0;
+    margin-bottom: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
   }
 }
 
 .form__input {
-  min-width: 450px;
+  min-width: 358px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1227,11 +1283,6 @@ div {
   border-radius: 4px;
   color: var(--white-color);
   padding: 15px 15px 15px 15px;
-}
-@media screen and (min-width: 1200px) {
-  .form__input {
-    min-width: 358px;
-  }
 }
 .form__input::-webkit-input-placeholder {
   font-weight: 400;

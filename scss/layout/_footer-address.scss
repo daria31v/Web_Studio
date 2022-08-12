@@ -1,12 +1,18 @@
 .footer__address {
     display: block;
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
     
     @media screen and (min-width: 768px) {
     margin-right: 165px;
+    margin-left: 76px;
+    margin-right: auto;
     }
     
     @media screen and (min-width: 1200px) {
-    margin-right: 70px;}
+    margin-right: 70px;
+    margin-left: 15px;}
 }
 
 .footer__logo {
@@ -19,6 +25,7 @@
 .address {
     font-style: normal;
     color: var(--footer-title);
+    
 }
 .address__address-list {
     @extend %reset-list;
@@ -41,6 +48,10 @@
     color: var(--footer-text-color);
     letter-spacing: 0.02em;
     transition: color var(--transition);
+    
+   
+
+
     &:hover,
     &:focus {
         color: var(--white-color);}
