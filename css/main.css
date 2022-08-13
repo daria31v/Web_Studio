@@ -37,24 +37,24 @@
   overflow: hidden;
 }
 
-.section-portfolio__container, .footer, .clients, .team, .about, .features, .hero-container, .header__container {
+.section-portfolio__container, .footer, .clients, .team, .about, .features, .hero, .header__container {
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 @media screen and (min-width: 480px) {
-  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero-container, .header__container {
+  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero, .header__container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero-container, .header__container {
+  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero, .header__container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero-container, .header__container {
+  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero, .header__container {
     width: 1200px;
   }
 }
@@ -124,16 +124,22 @@ div {
 }
 
 .container__title {
-  font-size: 44px;
+  font-size: 26px;
   max-width: 696px;
   color: #ffffff;
-  line-height: 1.36;
+  line-height: 1.62;
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
   letter-spacing: 0.06em;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .container__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .features-title {
@@ -153,10 +159,6 @@ div {
 @media screen and (min-width: 1200px) {
   .about-title {
     margin-bottom: 50px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about-title {
     font-size: 36px;
   }
 }
@@ -786,8 +788,8 @@ div {
 .hero {
   background-color: var(--hero-bgr-color);
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(40deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -797,6 +799,20 @@ div {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container {
+    margin-left: 189px;
+    margin-right: 189px;
+    text-align: center;
+  }
 }
 
 .hero-section__hero-button {

@@ -1,14 +1,21 @@
 .container__title {
-    font-size: 44px;
+    font-size: 26px;
     max-width: 696px;
     color: #ffffff;
-    line-height: 1.36;
+    line-height: 1.62;
     text-transform: uppercase;
     font-weight: 900;
     text-align: center;
     letter-spacing: 0.06em;
     margin-left: auto;
     margin-right: auto;
+
+
+@media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    }
+
 }
 .features-title {
     text-transform: uppercase;
@@ -24,10 +31,9 @@
     margin-bottom: 30px;
     @media screen and (min-width: 1200px){
     margin-bottom: 50px;
+    font-size: 36px;
     }
-
-@media screen and (min-width: 1200px) {
-    font-size: 36px;}       
+    
 }
 
 .team-title {
