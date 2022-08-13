@@ -16,15 +16,17 @@
 @import './components/buttons';
 @import './components/modal';
 @import './components/project-list';
+@import './components/mobile-menu';
 
 
 
 //  layout styles
 @import './layout/header';
 @import './layout/nav';
+@import './layout/menu-contacts';
 @import './layout/hero';
 @import './layout/section-features';
-@import './layout/section-we';
+@import './layout/section-about';
 @import './layout/section-team';
 @import './layout/section-clients';
 @import './layout/footer';

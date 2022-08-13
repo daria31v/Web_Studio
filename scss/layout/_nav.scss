@@ -1,5 +1,6 @@
 .menu {
-    font-weight: 500;
+    display: none;  
+    // font-weight: 500;
 }
 
 .menu-list {
@@ -47,38 +48,3 @@
       border-radius: 2px;}
 }    
 
-.menu-contacts {
-    @extend %reset-list;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.menu-contacts__item {
-    margin-right: 50px;
-    
-    &:last-child {
-    margin-right: 0;}  
-}
-
-.menu-contacts__link {
-    @extend %reset-link;
-    color: var(--main-text);
-    font-weight: 500;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color var(--transition);
-    display: flex;
-    align-items: center;
-    border: 0px;
-
-    &:hover,
-    &:focus,
-    &:active {
-    color: var(--accent-bgr-btn-color);}
-}
-
-.menu-contacts__icon {
-    fill: currentColor;
-    margin-right: 10px;
-}

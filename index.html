@@ -22,11 +22,16 @@
   </head>
   <body>
     <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__container">
         <a class="logo header__logo" href="" lang="en"
           >Web<span class="logo logo--grey">Studio</span></a
         >
+        <button class="menu-btn" type="button">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
 
         <nav class="menu">
           <ul class="menu-list">
@@ -65,17 +70,16 @@
 
     <main>
       <!-HERO-->
-    <section class="hero">
+      <section class="hero">
         <div class="hero-container">
-          
           <h1 class="container__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="button-hero hero-section__hero-button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
-    <!--FEATURES-->
-    <section class="section-features">
+      <!--FEATURES-->
+      <section class="section-features">
         <div class="features">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="features-list">
@@ -127,8 +131,8 @@
           </ul>
         </div>
       </section>
-    <!--ABOUT-->
-    <section class="section-about">
+      <!--ABOUT-->
+      <section class="section-about">
         <div class="about">
           <h2 class="about-title">Чим ми займаємося</h2>
           <ul class="about-list">
@@ -168,8 +172,8 @@
           </ul>
         </div>
       </section>
-    <!--TEAM-->
-    <section class="section-team">
+      <!--TEAM-->
+      <section class="section-team">
         <div class="team">
           <h2 class="about-title">Наша команда</h2>
           <ul class="team-list">
@@ -392,8 +396,8 @@
           </ul>
         </div>
       </section>
-    <!-- CLIENTS -->
-    <section class="section-clients">
+      <!-- CLIENTS -->
+      <section class="section-clients">
         <div class="clients">
           <h2 class="about-title">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -479,7 +483,7 @@
         </div>
       </section>
     </main>
-     <!--FOOTER-->
+    <!--FOOTER-->
     <footer class="footer">
       <div class="footer__container">
         <!-- address -->
@@ -621,6 +625,76 @@
           </label>
           <button class="btn-submite" type="submit">Відправити</button>
         </form>
+      </div>
+    </div>
+    <!-- MOBILE MENU -->
+    <div class="menu-overlay">
+      <div class="menu-container">
+        <nav class="menu-container__nav">
+          <ul class="menu-container__list">
+            <li class="menu-container__item">
+              <a href="./index.html" target="_self" class="menu-container__link">Студія</a>
+            </li>
+            <li class="menu-container__item">
+              <a href="./portfolio.html" target="_self" class="menu-container__link">Портфоліо</a>
+            </li>
+            <li class="menu-container__item">
+              <a href="/*Активне_посилання*/" target="_blank" class="menu-container__link"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts__list">
+          <li class="contacts__phone">
+            <a class="contacts__link" href="tel:+380991111111"> +38 099 111 11 11</a>
+          </li>
+          <li class="contacts__email">
+            <a class="contacts__link" href="mailto:infi@example.com"> info@devstudio.com </a>
+          </li>
+        </ul>
+        <ul class="contact-social">
+          <li class="contact-social__item">
+            <a
+              class="contact-social__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="contact-social__item">
+            <a
+              class="contact-social__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="contact-social__item">
+            <a
+              class="contact-social__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="facebook"
+              >Facebook</a
+            >
+          </li>
+          <li class="contact-social__item">
+            <a
+              class="contact-social__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="linkedin"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
     <script src="./js/modal.js"></script>
