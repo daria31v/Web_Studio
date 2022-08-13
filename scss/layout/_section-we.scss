@@ -1,25 +1,24 @@
-.section-we {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    
+.section-about {
+    display: none;    
     @media screen and (min-width: 1200px) {
         padding-top: 47px;
-        padding-bottom: 94px;}
+        padding-bottom: 94px;
+        display: contents;}
 }
-.we{
+.about{
     @extend %container;
 }
-.we-list {
+.about-list {
     @extend %reset-list;
     display: flex;
     text-align: center;
     gap: 30px;
 }
-.we-item {
+.about-item {
     width: 370px;
     height: 294px;
 }
-.overlay-we {
+.overlay-about {
     position: relative;
 }
 .overlay-text {

@@ -37,24 +37,24 @@
   overflow: hidden;
 }
 
-.section-portfolio__container, .footer, .clients, .team, .we, .features, .hero-container, .header__container {
+.section-portfolio__container, .footer, .clients, .team, .about, .features, .hero-container, .header__container {
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 @media screen and (min-width: 480px) {
-  .section-portfolio__container, .footer, .clients, .team, .we, .features, .hero-container, .header__container {
-    width: 450px;
+  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero-container, .header__container {
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .section-portfolio__container, .footer, .clients, .team, .we, .features, .hero-container, .header__container {
-    width: 738px;
+  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero-container, .header__container {
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-portfolio__container, .footer, .clients, .team, .we, .features, .hero-container, .header__container {
+  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero-container, .header__container {
     width: 1200px;
   }
 }
@@ -64,7 +64,7 @@
   color: var(--primery-text-color);
 }
 
-.main__filter-btn, .joining__joinin-list, .address__address-list, .clients__list, .social, .team-list, .we-list, .features-list, .menu-contacts, .menu-list, .main__project {
+.main__filter-btn, .joining__joinin-list, .address__address-list, .clients__list, .social, .team-list, .about-list, .features-list, .menu-contacts, .menu-list, .main__project {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -143,7 +143,7 @@ div {
   margin-bottom: 10px;
 }
 
-.we-title {
+.about-title {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -151,12 +151,12 @@ div {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
-  .we-title {
+  .about-title {
     margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .we-title {
+  .about-title {
     font-size: 36px;
   }
 }
@@ -820,10 +820,44 @@ div {
 }
 
 .features-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+
+.container-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .container-item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px), (min-width: 1200px) {
+  .container-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 .item-features {
@@ -836,30 +870,48 @@ div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
-  border-radius: 4px;
   background-color: var(--bgr-button-secondary);
   margin-bottom: 30px;
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .item-features {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item-features {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .features-text {
   color: var(--main-text);
   line-height: 1.71;
+  text-align: center;
 }
-
-.section-we {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .section-we {
-    padding-top: 47px;
-    padding-bottom: 94px;
+@media screen and (min-width: 768px), (min-width: 1200px) {
+  .features-text {
+    text-align: left;
   }
 }
 
-.we-list {
+.section-about {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section-about {
+    padding-top: 47px;
+    padding-bottom: 94px;
+    display: contents;
+  }
+}
+
+.about-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,12 +919,12 @@ div {
   gap: 30px;
 }
 
-.we-item {
+.about-item {
   width: 370px;
   height: 294px;
 }
 
-.overlay-we {
+.overlay-about {
   position: relative;
 }
 
@@ -907,19 +959,23 @@ div {
 }
 
 .team-list {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .team-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     gap: 30px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -927,7 +983,6 @@ div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
     gap: 30px;
   }
 }
@@ -938,6 +993,8 @@ div {
   text-align: center;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -ms-flex-preferred-size: calc((100% - 0px) / 1);
+      flex-basis: calc((100% - 0px) / 1);
 }
 .team-card:not(:last-child) {
   margin-bottom: 30px;
@@ -946,14 +1003,15 @@ div {
   .team-card {
     margin-bottom: 30px;
     gap: 30px;
-    -ms-flex-preferred-size: 100/2;
-        flex-basis: 100/2;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team-card {
     gap: 0;
-    width: 270px;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
   }
 }
 
