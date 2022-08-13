@@ -7,6 +7,19 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    margin-left: auto;
+
+    &:hover,
+    &:focus{
+        fill: var(--accent-bgr-btn-color);}
+
+    .menu-overlay & {
+    position: absolute;
+    top: 10px;
+    right: 15px;}
+    
+    @media screen and (min-width: 767px) {
+    display: none;}
 }
 .menu-overlay{
     position: fixed;
@@ -16,6 +29,21 @@
     background-color: var(--white-color);
     width: 100%;
     height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: opacity var(--transition), visibility var(--transition);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &.is-open{
+    opacity: 1;
+    pointer-events: inherit;
+    visibility: visible;
+    }
     
 }
 .menu-container{
@@ -25,6 +53,13 @@
     height: 100%;
     background-color: var(--white-color);
     padding: 48px 40px;
+
+    transform: translateX(100%);
+    transition: transform var(--transition);
+
+    .menu-overlay.is-open &{
+        transform: translateX(0);
+    }
 }
 .menu-container__nav {
     margin-bottom: auto;
@@ -32,6 +67,7 @@
 }
 .menu-container__list{
     @extend %reset-list;
+    color: var(--primery-text-color);
     
     
 }
@@ -45,6 +81,15 @@
 }
 .menu-container__link{
     @extend %reset-link;
+    &:hover,
+    &:focus,
+    &:active {
+    color: var(--accent-bgr-btn-color);}
+
+    &--current{
+    color: var(--accent-bgr-btn-color);
+    }
+
 }
 .contacts__list{
     @extend %reset-list;
@@ -56,15 +101,27 @@
     font-weight: 500;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
+    color: var(--main-text);
+    &:hover,
+    &:focus,
+    &:active {
+    color: var(--accent-bgr-btn-color);}
+        
 }
+
 .contacts__phone{
     font-size: 34px;
     margin-bottom: 32px;
     
 }
+.contacts__link.phone {
+    color: var(--accent-bgr-btn-color);
+    }
+
 .contacts__email{
     font-size: 24px;
     margin-bottom: 64px;
+    
 }
 .contact-social{
     @extend %reset-list;

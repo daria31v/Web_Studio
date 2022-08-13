@@ -27,7 +27,7 @@
         <a class="logo header__logo" href="" lang="en"
           >Web<span class="logo logo--grey">Studio</span></a
         >
-        <button class="menu-btn" type="button">
+        <button class="menu-btn" type="button" data-menu-open>
           <svg width="40" height="40">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -44,7 +44,7 @@
               <a href="./portfolio.html" target="_self" class="menu-list__link">Портфоліо</a>
             </li>
             <li class="menu-list__item">
-              <a href="/*Активная_ссылка*/" target="_blank" class="menu-list__link">Контакти</a>
+              <a href="/*Активне_посилання*/" target="_blank" class="menu-list__link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -69,7 +69,7 @@
     </header>
 
     <main>
-      <!-HERO-->
+      <!--HERO-->
       <section class="hero">
         <div class="hero-container">
           <h1 class="container__title">Ефективні рішення для вашого бізнесу</h1>
@@ -628,12 +628,22 @@
       </div>
     </div>
     <!-- MOBILE MENU -->
-    <div class="menu-overlay">
+    <div class="menu-overlay is-open" data-menu>
       <div class="menu-container">
+        <button class="menu-btn" type="button" data-menu-close>
+          <svg class="menu-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icone-close-mobile-menu"></use>
+          </svg>
+        </button>
         <nav class="menu-container__nav">
           <ul class="menu-container__list">
             <li class="menu-container__item">
-              <a href="./index.html" target="_self" class="menu-container__link">Студія</a>
+              <a
+                href="./index.html"
+                target="_self"
+                class="menu-container__link menu-container__link--current"
+                >Студія</a
+              >
             </li>
             <li class="menu-container__item">
               <a href="./portfolio.html" target="_self" class="menu-container__link">Портфоліо</a>
@@ -647,10 +657,10 @@
         </nav>
         <ul class="contacts__list">
           <li class="contacts__phone">
-            <a class="contacts__link" href="tel:+380991111111"> +38 099 111 11 11</a>
+            <a class="contacts__link phone" href="tel:+380991111111"> +38 099 111 11 11</a>
           </li>
           <li class="contacts__email">
-            <a class="contacts__link" href="mailto:infi@example.com"> info@devstudio.com </a>
+            <a class="contacts__link email" href="mailto:infi@example.com"> info@devstudio.com </a>
           </li>
         </ul>
         <ul class="contact-social">
@@ -698,5 +708,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

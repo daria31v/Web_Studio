@@ -1,14 +1,7 @@
 .footer {
     @extend %container;
     background-color: var(--footer-bgr-color);
-    height: 603px;
-
-    @media screen and (min-width: 768px) {
-    height: 463px;
-    }
-              
-    @media screen and (min-width: 1200px) {
-    height: auto;}
+    height: 100%;  
 }
 
 

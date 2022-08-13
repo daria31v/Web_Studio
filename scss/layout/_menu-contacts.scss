@@ -1,10 +1,17 @@
 .menu-contacts {
-    display: none;
-//     @extend %reset-list;
-//     display: flex;
-//     align-items: center;
-//     margin-left: auto;
-// 
+    @extend %reset-list;
+
+    @media screen and (max-width: 767px) {
+    display: none;}
+
+    @media screen and (min-width: 767px){
+    display: block;}
+    
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;}
+
 }
 
 .menu-contacts__item {
@@ -13,16 +20,18 @@
     &:last-child {
         margin-right: 0;
     }
+        
 }
 
 .menu-contacts__link {
     @extend %reset-link;
     color: var(--main-text);
-    font-weight: 500;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color var(--transition);
     display: flex;
+    font-weight: 500;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    transition: color var(--transition);
+    
     align-items: center;
     border: 0px;
 
@@ -30,6 +39,11 @@
     &:focus,
     &:active {
         color: var(--accent-bgr-btn-color);
+    }
+
+    @media screen and (min-width: 1200px){
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
