@@ -1440,7 +1440,7 @@ div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--icon-border-color);
   border-radius: 4px;
@@ -1451,6 +1451,16 @@ div {
 .clients__link:hover, .clients__link:focus {
   color: var(--accent-bgr-btn-color);
   border: 1px solid var(--accent-bgr-btn-color);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .clients__icon {
