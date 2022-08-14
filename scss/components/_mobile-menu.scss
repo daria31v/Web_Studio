@@ -32,10 +32,11 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    
 
     transition: opacity var(--transition), visibility var(--transition);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         display: none;
     }
 

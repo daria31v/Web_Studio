@@ -43,14 +43,9 @@
     font-size: 12px;
     align-items: center;
     border: 0px;
-    // &:not(:last-child) {
-    //         margin-bottom: 10px;
-    //     }
-    
+   
     transition: color var(--transition);
     
-    
-
     &:hover,
     &:focus,
     &:active {
