@@ -338,7 +338,8 @@ div {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px 40px;
   background-color: var(--white-color);
   border-radius: 4px;
@@ -349,6 +350,12 @@ div {
   transition: opacity var(--animation-modal), -webkit-transform var(--animation-modal);
   transition: transform var(--animation-modal), opacity var(--animation-modal);
   transition: transform var(--animation-modal), opacity var(--animation-modal), -webkit-transform var(--animation-modal);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -400,9 +407,14 @@ div {
           justify-content: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
 }
 
 .group {
@@ -472,38 +484,44 @@ div {
 }
 .input-textarea::-webkit-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--font-form-modal);
 }
 .input-textarea::-moz-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--font-form-modal);
 }
 .input-textarea:-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--font-form-modal);
 }
 .input-textarea::-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--font-form-modal);
 }
 .input-textarea::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--font-form-modal);
+}
+@media screen and (min-width: 1200px) {
+  .input-textarea {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .input-icon {
@@ -561,8 +579,8 @@ div {
 
 .checkbox-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-text);
   -webkit-user-select: none;
@@ -571,11 +589,25 @@ div {
           user-select: none;
   text-underline-position: under;
 }
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .terms-link {
   text-decoration: underline;
   color: var(--accent-bgr-btn-color);
   text-underline-position: under;
+  font-size: 12px;
+  line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .terms-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .btn-submite {
@@ -624,8 +656,20 @@ div {
             flex-direction: column;
   }
 }
+
 .project-item {
-  text-align: center;
+  background-color: var(--white-color);
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .project-item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-item {
+    max-width: 370px;
+  }
 }
 
 .project-link {
@@ -679,6 +723,7 @@ div {
 
 .project-img {
   display: block;
+  width: 100%;
 }
 
 .work-text {
@@ -1231,22 +1276,9 @@ div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .team-list {
-    gap: 30px;
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     gap: 30px;
   }
 }
@@ -1399,7 +1431,6 @@ div {
 
 .footer {
   background-color: var(--footer-bgr-color);
-  height: 100%;
 }
 
 .footer__container {
@@ -1581,7 +1612,6 @@ div {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 450px;
-  height: 153px;
   margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
@@ -1592,6 +1622,7 @@ div {
 }
 @media screen and (min-width: 1200px) {
   .subscription {
+    margin-left: 93px;
     margin-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;

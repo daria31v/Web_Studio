@@ -4,24 +4,24 @@
         flex-wrap: wrap;
         gap: 30px;
         @media screen and (max-width: 480px){
-        flex-direction: column;}  
-        @media screen and (min-width: 768px) {
-               
-        }
-    }
-        
-        
-
+        flex-direction: column;
+        }       
+    }  
+ 
+// }   flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
 .project-item{
-    text-align: center;
-      
-        // @media screen and (min-width: 768px) {
-        
-           
-        // @media screen and (min-width: 1200px) {
-        // gap: 0;
-        // flex-basis: 0;}
-}     
+    // border: 1px solid var(--border-btn);
+    background-color: var(--white-color);
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+    max-width: 354px;}
+    
+    @media screen and (min-width: 1200px) {
+    max-width: 370px;
+    }
+}
+
 .project-link {
     @extend %reset-link;
     display: block;
@@ -68,6 +68,7 @@
 
 .project-img {
     display: block;
+    width: 100%;
 }
 .work-text {
     font-size: 16px;
