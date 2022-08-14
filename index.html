@@ -139,19 +139,20 @@
             <li class="about-item">
               <div class="overlay-about">
                 <img
-                  srcset="./images/about/img-1@2x_desk.jpg 2x"
-                  src="./images/about/img-1@2x_desk.jpg"
+                  srcset="./images/about/img-1@1x_desk.jpg 1x, ./images/about/img-1@2x_desk.jpg 2x"
+                  src="./images/about/img-1@1x_desk.jpg"
                   alt="зображення планшету користувача"
                   width="370"
                   height="294"
                 />
+
                 <p class="overlay-text">Десктопні додатки</p>
               </div>
             </li>
             <li class="about-item">
               <img
-                srcset="./images/about/img-2@2x_desk.jpg 2x"
-                src="./images/about/img-2@2x_desk.jpg"
+                srcset="./images/about/img-2@1x_desk.jpg 1x, ./images/about/img-2@2x_desk.jpg 2x"
+                src="./images/about/img-2@1x_desk.jpg"
                 alt="зображення мобильного телефона в руках користувача"
                 width="370"
                 height="294"
@@ -162,8 +163,8 @@
             </li>
             <li class="about-item">
               <img
-                srcset="./images/about/img-3@2x_desk.jpg 2x"
-                src="./images/about/img-3@2x_desk.jpg"
+                srcset="./images/about/img-3@1x_desk.jpg 1x, ./images/about/img-3@2x_desk.jpg 2x"
+                src="./images/about/img-3@1x_desk.jpg"
                 alt="зображення палітри кольорів на планшеті в руках користувача"
                 width="370"
                 height="294"
@@ -181,7 +182,23 @@
           <h2 class="about-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img src="./images/1.jpg" alt="фото Игоря Дем'яненко" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-1@1x_desk.jpg 1x, ./images/team/img-1@2x_desk.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-1@1x_tab.jpg 1x, ./images/team/img-1@2x_tab.jpg 2x"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-1@1x_mob.jpg 1x, ./images/team/img-1@2x_mob.jpg 2x"
+                />
+                <img src="./images/team/img-1@1x_mob.jpg" alt="фото Игоря Дем'яненко" />
+              </picture>
               <div class="team-cont">
                 <h3 class="team-title">Игорь Дем'яненко</h3>
                 <p lang="en" class="team-text">Product Designer</p>
@@ -235,7 +252,23 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/2.jpg" alt="фото Ольги Репіної" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-2@1x_desk.jpg 1x, ./images/team/img-2@2x_desk.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-2@1x_tab.jpg 1x, ./images/team/img-2@2x_tab.jpg 2x"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-2@1x_mob.jpg 1x, ./images/team/img-2@2x_mob.jpg 2x"
+                />
+                <img src="./images/team/img-2@1x_mob.jpg" alt="фото Ольги Репіної" />
+              </picture>
               <div class="team-cont">
                 <h3 class="team-title">Ольга Репіна</h3>
                 <p lang="en" class="team-text">Frontend Developer</p>
@@ -289,7 +322,23 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/3.jpg" alt="фото Миколая Тарасова" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-3@1x_desk.jpg 1x, ./images/team/img-3@2x_desk.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-3@1x_tab.jpg 1x, ./images/team/img-3@2x_tab.jpg 2x"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-3@1x_mob.jpg 1x, ./images/team/img-3@2x_mob.jpg 2x"
+                />
+                <img src="./images/team/img-3@1x_mob.jpg" alt="фото Миколая Тарасова" />
+              </picture>
               <div class="team-cont">
                 <h3 class="team-title">Микола Тарасов</h3>
                 <p lang="en" class="team-text">Marketing</p>
@@ -343,7 +392,23 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/4.jpg" alt="фото Михайла Єрмакова" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-4@1x_desk.jpg 1x, ./images/team/img-4@2x_desk.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-4@1x_tab.jpg 1x, ./images/team/img-4@2x_tab.jpg 2x"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-4@1x_mob.jpg 1x, ./images/team/img-4@2x_mob.jpg 2x"
+                />
+                <img src="./images/team/img-4@1x_mob.jpg" alt="фото Михайла Єрмакова" />
+              </picture>
               <div class="team-cont">
                 <h3 class="team-title">Михаило Єрмаков</h3>
                 <p lang="en" class="team-text">UI Designer</p>
