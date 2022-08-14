@@ -2,9 +2,8 @@
     @media screen and (max-width: 767px){
          display: none; 
          font-weight: 500;
+         margin-bottom: 0;
     }
-    
-    
 }
 
 .menu-list {
@@ -25,7 +24,7 @@
     @extend %reset-link;
     letter-spacing: 0.02em;
     transition: color var(--transition);
-
+    font-weight: 500;
     &:hover,
     &:focus,
     &:active {
@@ -36,19 +35,26 @@
     position: relative;
     color: var(--accent-bgr-btn-color);
     text-transform: none;
-    font-weight: 500;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    @media screen and (min-width: 1200px){
     padding-top: 32px;
-    padding-bottom: 32px;}
+    padding-bottom: 28px;}
+    
+    }
 
     &--current::after {
       content: '';
       position: absolute;
       left: 0;
-      bottom: -1px;
+      bottom: -5px;
       display: block;
       width: 100%;
       height: 4px;
       background: var(--accent-bgr-btn-color);
       border-radius: 2px;}
-}    
-
+        
+      @media screen and (min-width: 1200px){
+      bottom: 2px;}
+   
+}  
