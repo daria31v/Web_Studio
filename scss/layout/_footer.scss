@@ -1,11 +1,13 @@
 .footer {
-    @extend %container;
+    
     background-color: var(--footer-bgr-color);
+    max-width: 100%;
     
 }
 
 
 .footer__container {
+    @extend %container;
     display: block;
     text-align: center;
     flex-wrap: wrap;

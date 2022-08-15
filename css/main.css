@@ -38,24 +38,24 @@
   overflow: hidden;
 }
 
-.section-portfolio__container, .footer, .clients, .team, .about, .features, .hero, .header__container {
+.section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero, .header__container {
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 @media screen and (min-width: 480px) {
-  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero, .header__container {
+  .section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero, .header__container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero, .header__container {
+  .section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero, .header__container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-portfolio__container, .footer, .clients, .team, .about, .features, .hero, .header__container {
+  .section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero, .header__container {
     width: 1200px;
   }
 }
@@ -1469,6 +1469,7 @@ div {
 
 .footer {
   background-color: var(--footer-bgr-color);
+  max-width: 100%;
 }
 
 .footer__container {
