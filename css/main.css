@@ -1148,6 +1148,8 @@ div {
 }
 
 .section-features {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1680,9 +1682,6 @@ div {
 
 .subscription__form {
   display: block;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .subscription__form {
