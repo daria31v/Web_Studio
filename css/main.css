@@ -1273,11 +1273,11 @@ div {
 
 .hero-section__hero-button {
   margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-features {
