@@ -365,7 +365,6 @@ div {
   transition: opacity var(--animation-modal), -webkit-transform var(--animation-modal);
   transition: transform var(--animation-modal), opacity var(--animation-modal);
   transition: transform var(--animation-modal), opacity var(--animation-modal), -webkit-transform var(--animation-modal);
-  overflow: scroll;
 }
 @media screen and (max-width: 479px) {
   .modal {
@@ -516,6 +515,11 @@ div {
   height: 120px;
   padding: 12px 16px;
 }
+@media screen and (max-width: 479px) {
+  .input-textarea {
+    height: 40%;
+  }
+}
 .input-textarea::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -554,23 +558,18 @@ div {
 @media screen and (max-width: 479px) {
   .input-textarea::-webkit-input-placeholder {
     font-size: 10px;
-    height: 100%;
   }
   .input-textarea::-moz-placeholder {
     font-size: 10px;
-    height: 100%;
   }
   .input-textarea:-ms-input-placeholder {
     font-size: 10px;
-    height: 100%;
   }
   .input-textarea::-ms-input-placeholder {
     font-size: 10px;
-    height: 100%;
   }
   .input-textarea::placeholder {
     font-size: 10px;
-    height: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -828,7 +827,7 @@ div {
 @media screen and (max-width: 479px) {
   .overlay-project-text {
     font-size: 15px;
-    padding: 18px 30px;
+    padding: 10px 18px;
   }
 }
 
