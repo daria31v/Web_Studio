@@ -1,7 +1,7 @@
 .menu-btn{
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -51,7 +51,7 @@
 .menu-container{
     display: flex;
     flex-direction: column;
-    max-width: 480px;
+    max-width: 100%;
     height: 100%;
     background-color: var(--white-color);
     padding: 48px 40px;
@@ -79,6 +79,9 @@
     &:not(:last-child){
         margin-bottom: 32px;
     }
+    @media screen and (max-width: 479px) {
+        font-size: 30px;
+        margin-bottom: 25px;}
 }
 .menu-container__link{
     @extend %reset-link;
@@ -113,6 +116,11 @@
 .contacts__phone{
     font-size: 34px;
     margin-bottom: 32px;
+
+    @media screen and (max-width: 479px) {
+    font-size: 20px;
+    margin-bottom: 25px;
+    }
     
 }
 .contacts__link.phone {
@@ -122,6 +130,10 @@
 .contacts__email{
     font-size: 24px;
     margin-bottom: 64px;
+
+    @media screen and (max-width: 479px) {
+    font-size: 15px;
+    margin-bottom: 25px;}
     
 }
 .contact-social{
@@ -135,8 +147,11 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
-    letter-spacing: 0.02em;}
-    
+    letter-spacing: 0.02em;
+    @media screen and (max-width: 479px) {
+    font-size: 10px;}
+}
+
 .contact-social__link{
     @extend %reset-link;
     color: var(--accent-bgr-btn-color);
@@ -148,7 +163,9 @@
         display: block;
         width: 22px;
         height: 0px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-block-end: 1px solid rgba(33, 33, 33, 0.2);
         transform: rotate(90deg);
+        @media screen and (max-width: 479px) {
+                width: 10;}
     }
 }

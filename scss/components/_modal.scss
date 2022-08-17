@@ -30,7 +30,12 @@
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     opacity: 1;
     transition: transform var(--animation-modal), opacity var(--animation-modal);
+    overflow: scroll;
 
+    @media screen and (max-width: 479px) {
+             width: 300px;
+             height: 450px;
+        }
     @media screen and (min-width: 1200px) {
             width: 528px;
             height: 581px;
@@ -79,6 +84,12 @@
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
 
+    @media screen and (max-width: 479px) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.15;
+        }
+
     @media screen and (min-width: 1200px) {
     line-height: 1.15;
         }
@@ -105,6 +116,10 @@
     color: var(--main-text);
     margin-bottom: 4px;
     text-align: left;
+    @media screen and (max-width: 479px) {
+            font-size: 8px;
+            
+        }
 }
 .input-item {
     padding: 11px 11px 11px 42px;
@@ -151,10 +166,14 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.01em;
-        color: var(--font-form-modal);}
+        color: var(--font-form-modal);
+
+        @media screen and (max-width: 479px) {
+            font-size: 10px;
+            height: 100%;}
         @media screen and (min-width: 1200px) {
             font-size: 12px;
-            line-height: 1.16;}
+            line-height: 1.16;}}
 }
 
 .input-icon {
@@ -171,6 +190,9 @@
     margin-bottom: 30px;
     gap: 7px;
     height: 24px;
+
+    @media screen and (max-width: 479px){
+    margin-bottom: 15px;}
 }
 
 .order-input:focus+.checkbox-icon {
@@ -209,6 +231,11 @@
     user-select: none;
     text-underline-position: under;
 
+    @media screen and (max-width: 479px) {
+        font-size: 10px;
+        text-align: left;
+        }
+    
     @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -221,6 +248,9 @@
     text-underline-position: under;
     font-size: 12px;
     line-height: 1.16;
+
+    @media screen and (max-width: 479px) {
+    font-size: 10px;}
 
     @media screen and (min-width: 1200px) {
     font-size: 14px;

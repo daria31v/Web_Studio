@@ -2,17 +2,19 @@
     @extend %reset-list;
         display: flex;
         flex-wrap: wrap;
+        
         gap: 30px;
         @media screen and (max-width: 480px){
         flex-direction: column;
         }       
     }  
  
-// }   flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
+
 .project-item{
-    // border: 1px solid var(--border-btn);
+    border: 1px solid var(--border-btn);
     background-color: var(--white-color);
     max-width: 450px;
+    flex-grow: 1;
 
     @media screen and (min-width: 768px) {
     max-width: 354px;}
@@ -24,8 +26,13 @@
 
 .project-link {
     @extend %reset-link;
-    display: block;
+    // display: block;
     transition: box-shadow var(--transition);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
 
     &:hover,
     &:focus {
@@ -42,10 +49,13 @@
 }
 .overlay-project {
     position: absolute;
+    flex-grow: 1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     transform: translateY(100%);
     transition: transform var(--transition);
     background-color: var(--overlay-card);
@@ -62,9 +72,12 @@
     text-align: left;
     line-height: 1.55;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 63px 24px;
     letter-spacing: 0.03em;
-}
+    padding: 24px 49px;
+    @media screen and (max-width: 479px) {
+    font-size: 15px;
+    padding: 18px 30px;}
+    }
 
 .project-img {
     display: block;
@@ -78,6 +91,6 @@
 
 .card-project {
     padding: 20px 24px;
-    border: 1px solid var(--border-btn);
+   
     border-top: none;
 }

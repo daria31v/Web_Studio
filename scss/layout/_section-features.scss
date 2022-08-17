@@ -61,8 +61,6 @@
 .features-text {
     color: var(--main-text);
     line-height: 1.71;
-    text-align: center;
-    @media screen and (min-width: 768px),(min-width: 1200px) {
-    text-align: left;}  
-   
+    text-align: left;
+    
 }
