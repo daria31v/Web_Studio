@@ -528,7 +528,7 @@ div {
 }
 @media screen and (max-width: 479px) {
   .input-textarea {
-    height: 60px;
+    height: 75px;
   }
 }
 .input-textarea::-webkit-input-placeholder {
