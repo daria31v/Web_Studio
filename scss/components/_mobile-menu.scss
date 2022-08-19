@@ -32,7 +32,7 @@
 
     transition: opacity var(--transition), visibility var(--transition);
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
     &.is-hidden{

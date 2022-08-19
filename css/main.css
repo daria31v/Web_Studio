@@ -449,6 +449,12 @@ div {
   margin-top: 12px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 479px) {
+  .group {
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+}
 
 .input-order {
   display: block;
@@ -484,6 +490,11 @@ div {
   -webkit-transition: border var(--transition);
   transition: border var(--transition);
 }
+@media screen and (max-width: 479px) {
+  .input-item {
+    padding: 6px 6px 6px 42px;
+  }
+}
 .input-item:hover, .input-item:focus {
   border: 1px solid var(--accent-bgr-btn-color);
 }
@@ -517,7 +528,7 @@ div {
 }
 @media screen and (max-width: 479px) {
   .input-textarea {
-    height: 40%;
+    height: 60px;
   }
 }
 .input-textarea::-webkit-input-placeholder {
@@ -601,6 +612,11 @@ div {
   left: 12px;
   -webkit-transition: fill var(--transition);
   transition: fill var(--transition);
+}
+@media screen and (max-width: 479px) {
+  .input-icon {
+    bottom: 6px;
+  }
 }
 
 .order {
@@ -889,7 +905,7 @@ div {
   -webkit-transition: opacity var(--transition), visibility var(--transition);
   transition: opacity var(--transition), visibility var(--transition);
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-overlay {
     display: none;
   }
@@ -1232,8 +1248,6 @@ div {
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(40deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img@1x_mob.jpg");
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -1258,6 +1272,8 @@ div {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(40deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img@2x_desk.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
