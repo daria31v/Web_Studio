@@ -38,34 +38,34 @@
   overflow: hidden;
 }
 
-.section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero-container, .header__container {
+.section-contacts__container, .section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero-container, .header__container {
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 @media screen and (min-width: 480px) {
-  .section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero-container, .header__container {
+  .section-contacts__container, .section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero-container, .header__container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero-container, .header__container {
+  .section-contacts__container, .section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero-container, .header__container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero-container, .header__container {
+  .section-contacts__container, .section-portfolio__container, .footer__container, .clients, .team, .about, .features, .hero-container, .header__container {
     width: 1200px;
   }
 }
 
-.joinin-list__link, .address__link, .clients__link, .social-link, .menu-contacts__link, .menu-list__link, .contact-social__link, .contacts__link, .menu-container__link, .project-link {
+.our-contacts__link, .joinin-list__link, .address__link, .clients__link, .social-link, .menu-contacts__link, .menu-list__link, .contact-social__link, .contacts__link, .menu-container__link, .project-link {
   text-decoration: none;
   color: var(--primery-text-color);
 }
 
-.main__filter-btn, .joining__joinin-list, .address__address-list, .clients__list, .social, .team-list, .about-list, .features-list, .menu-contacts, .menu-list, .contact-social, .contacts__list, .menu-container__list, .main__project {
+.our__contacts__list, .main__filter-btn, .joining__joinin-list, .address__address-list, .clients__list, .social, .team-list, .about-list, .features-list, .menu-contacts, .menu-list, .contact-social, .contacts__list, .menu-container__list, .main__project {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -171,6 +171,20 @@ div {
 @media screen and (min-width: 1200px) {
   .about-title {
     margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.contacts-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.17;
+  text-align: start;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-title {
+    margin-bottom: 60px;
     font-size: 36px;
   }
 }
@@ -1251,7 +1265,7 @@ div {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(40deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img@2x_mob.jpg");
+    background-image: linear-gradient(40deg, rgba(206, 211, 238, 0.4), rgba(237, 238, 152, 0.4)), url("../images/hero/img@2x_mob.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -1961,4 +1975,40 @@ div {
             justify-content: center;
     margin-bottom: 50px;
   }
+}
+
+.section-contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-contacts {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.our__contacts__list {
+  text-align: start;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .our__contacts__list {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.our__contacts__item {
+  margin-bottom: 10px;
+}
+
+.our-contacts__link {
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  -webkit-transition: color var(--transition);
+  transition: color var(--transition);
+}
+.our-contacts__link:hover, .our-contacts__link:focus, .our-contacts__link:active {
+  color: var(--accent-bgr-btn-color);
 }/*# sourceMappingURL=main.css.map */

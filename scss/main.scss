@@ -3,22 +3,17 @@
 @import "./utils/visually-hidden";
 @import './utils/placeholders';
 
-
 //  base styles
 @import './base/base';
 @import './base/reset';
 
-
 //  components styles
-// @import './components/container-style';
 @import './components/logo';
 @import './components/titles';
 @import './components/buttons';
 @import './components/modal';
 @import './components/project-list';
 @import './components/mobile-menu';
-
-
 
 //  layout styles
 @import './layout/header';
@@ -36,6 +31,6 @@
 @import './layout/subscription-form';
 @import './layout/section-portfolio';
 @import './layout/filter-buttons';
-// @import './layout/';
+@import './layout/section-contacts';
 
 
